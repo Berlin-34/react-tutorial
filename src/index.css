@@ -18,6 +18,12 @@ body {
   gap: 2rem;
 }
 
+.booklist-parent {
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
@@ -30,6 +36,8 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .book img {
@@ -50,4 +58,20 @@ body {
 
 .book p {
   margin: 1rem 0 0.5rem;
+}
+
+.book .position span {
+  color: #fff;
+  transform: translate(10%, 10%);
+  font-weight: 600;
+}
+
+.book .position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 0.5rem 0.5rem 1rem;
+  background-color: #c45500;
+  border-radius: 1rem;
+  transform: translate(-20%, -20%);
 }
